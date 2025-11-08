@@ -4,7 +4,6 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: #113743;
   height: 100%;
   width: 100%;
@@ -16,7 +15,11 @@ a:hover {
 }
 
 .blauw {
-  color: #5684e6;
+  color: #006abf;
+}
+
+.verela {
+  font-family: "Varela Round", sans-serif;
 }
 
 span {
