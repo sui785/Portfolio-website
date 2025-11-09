@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>contact</title>
     <!-- resetten van browsers -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- Bootstrap CSS -->
@@ -33,9 +33,8 @@
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body class="verela p-3 m-0 border-0 bd-example">
-    <nav class="p-1 navbar navbar-expand-md bg-light container-fluid">
+    <nav class="p-0 navbar navbar-expand-md bg-light container-fluid">
       <a class="navbar-brand" href="#"
         ><img
           src="assets/images/logo-3.png"
@@ -56,33 +55,155 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Overzicht</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="project.html">Projecten</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html"
-              >Contact</a
-            >
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <footer class="container-fluid bg-light text-center h6 small p-4">
-      Socials
-      <br />
-      <br />
-      LinkedIn - Twitter
-      <br />
-      <br />
-      Usman Khan - 2025 - &copy; Alle rechten voorbehouden
-      <br />
+
+    <header class="row m-5">
+      <h1 class="col display-4 blauw">Stuur een bericht!</h1>
+    </header>
+    <!-- pe-3 voor spatie zijkant en mb-3 voor spatie eronder -->
+    <div class="container">
+      <div class="row">
+        <main class="col-md-9 pe-3">
+          <section id="contact" class="row">
+            <div class="col-12 mb-3">
+              <h2 class="fs-5 fw-bolder">
+                Heb je een vraag of wil je samenwerken? Ik hoor graag van je!
+                Vul het onderstaande formulier in en ik neem zo snel mogelijk
+                contact met je op.
+              </h2>
+              <br />
+              <p>Velden met een <span>*</span> zijn verplicht.</p>
+            </div>
+            <hr />
+            <!-- g-3 voor spaties onderling en mb-3 voor spatie vanonder -->
+            <form action="#" method="post">
+              <fieldset class="row g-3 mb-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">
+                  gegevens
+                </legend>
+                <div class="col-md-6">
+                  <label for="voornaam">Naam <span>*</span></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="naam"
+                    aria-label="uw naam"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="e-mail">E-mail <span>*</span></label>
+                  <input
+                    type="e-mail"
+                    class="form-control"
+                    id="e-mail"
+                    aria-label="uw e-mailadres"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <!-- g-3 voor spaties onderling, mb-3 voor spatie vanonder en mt-3 voor spatie erboven -->
+              <fieldset class="row g-3 mb-3 mt-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">
+                  bericht
+                </legend>
+                <div class="col-12">
+                  <label for="onderwerp">Onderwerp <span>*</span></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="onderwerp"
+                    aria-label="onderwerp van uw bericht"
+                    required
+                  />
+                </div>
+                <!-- textarea hieronder gebruikt voor een groter input veld -->
+                <div class="col-12">
+                  <label for="bericht">Uw bericht <span>*</span></label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="bericht"
+                    rows="5"
+                    aria-label="uw bericht"
+                    required
+                  ></textarea>
+                </div>
+              </fieldset>
+              <!-- mb-3 voor spatie vanonder -->
+              <div class="col-12 mb-5">
+                <button type="submit" class="btn btn-primary">Verzenden</button>
+              </div>
+            </form>
+          </section>
+        </main>
+        <aside class="col-md-3 border-start ps-5">
+          <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+          <p>
+            Usman Khan<br />
+            <a href="mailto:usman.khan@mail.be">usman.khan@mail.be</a><br />
+            +32 456 78 91 23
+          </p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/yourusername"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin blauw fs-6"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram blauw fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook blauw fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter blauw fs-6"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <!-- d-flex voor horizontale layout p-4 voor zij-padding h6 small voor kleinere letters  -->
+    <footer class="container-fluid bg-light small p-4 d-flex">
+      <!-- text-start voor links align -->
+      <div class="text-start">
+        <strong>Links</strong><br />
+        <a href="index.html">Home</a><br />
+        <a href="portfolio.html">Portfolio</a><br />
+        <a href="project.html">Projecten</a><br />
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Socials gecentreerd door mx-auto in d-flex -->
+      <div class="mx-auto text-center">
+        <strong>Socials</strong><br /><br />
+        Twitter - LinkedIn - Github<br /><br />
+        <small>Usman Khan - 2025 - &copy; Alle rechten voorbehouden</small>
+      </div>
     </footer>
   </body>
 </html>
