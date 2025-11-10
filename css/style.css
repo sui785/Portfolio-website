@@ -5,10 +5,11 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0;
-  color: #113743;
+  color: #11374F;
   height: 100%;
   width: 100%;
 }
+
 /* om lijntjes onder de linktekst te verwijderen en kleur thema */
 a,
 a:hover {
@@ -27,8 +28,9 @@ a:hover {
 span {
   color: red;
 }
+
 /* om knop te personaliseren */
-.btn-primary {
+.btn-submit {
   --bs-btn-color: #fff;
   --bs-btn-bg: #006abf;
   --bs-btn-border-color: #006abf;
