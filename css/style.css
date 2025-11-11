@@ -10,7 +10,7 @@ body {
   width: 100%;
 }
 
-/* om lijntjes onder de linktekst te verwijderen en kleur thema */
+/* om lijntjes onder de linktekst te verwijderen en kleur bij hover */
 a,
 a:hover {
   text-decoration: none;
@@ -27,14 +27,14 @@ a:hover {
 /* portfolio items gepersonaliseerd */
 .portfolio-item {
   border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 15px;
-  transition: box-shadow 0.3s ease;
-  background-color: #f8f9fa
+  padding: 1rem; /* spaties rondom in vak */
+  border-radius: 15px; /* afronding van bordervak */
+  transition: box-shadow 0.3s ease; /* afronding van bordervak */
+  background-color: #f8f9fa;
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* hover effects */
 }
 
 span {
