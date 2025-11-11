@@ -31,10 +31,27 @@ a:hover {
   border-radius: 15px; /* afronding van bordervak */
   transition: box-shadow 0.3s ease; /* afronding van bordervak */
   background-color: #f8f9fa;
+  object-fit: cover;
+}
+
+.portfolio-item img {
+  width: 100%; /* vult de kolom */
+  height: 200px; /* vaste hoogte */
+  object-fit: cover; /*  netjes */
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* hover effects */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* hover effects toegevoegd */
+}
+
+/* lijst personaliseren met bolletjes en spaties */
+ul.project-list {
+  list-style-type: disc; /* gekozen voor ronde bolletjes */
+  padding-left: 1.5rem; /* linkse spatie van de oplijsting */
+}
+
+ul.project-list li {
+  margin-bottom: 0.75rem; /* ruimte onder elk list item */
 }
 
 span {

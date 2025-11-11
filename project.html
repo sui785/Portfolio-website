@@ -77,11 +77,224 @@
     <header class="row m-5">
       <h1 class="col display-4 blauw">Projecten</h1>
     </header>
-    <!-- info toevoegen-->
+    <!-- alles behalve navbar, header en footer in container -->
     <div class="container">
       <div class="row">
-        <main class="col-md-9 mb-4"></main>
-        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen -->
+        <!-- de main en aside samen in een div gedaan zodat ze overal mooi naast elkaar staan op desktops -->
+        <main class="col-md-9 mb-4">
+          <h2 class="mb-3">Webwizz project</h2>
+          <p>
+            In dit project stond het uittekenen van een gestructureerd
+            bekabelingsschema centraal, waarbij we rekening moesten houden met
+            de principes van gestructureerd bekabelen. Naast het schema
+            ontwierpen we ook een rack layout, een patch plan en een
+            aankooplijst om het volledige netwerkontwerp te ondersteunen.
+          </p>
+
+          <p>
+            Het scenario was gebaseerd op een kantooromgeving met een
+            gelijkvloers en een eerste verdieping, gescheiden door een hoogte
+            van vier meter. Binnen dit gebouw werken 24 medewerkers, elk met een
+            eigen bureau of werkplek. Voor hun werkzaamheden zijn er twee
+            on-premises servers voorzien, waarbij enkel gemachtigde personen
+            fysieke toegang hebben.
+          </p>
+
+          <p>
+            De infrastructuur omvat 20 desktops en 10 laptops, waarvan 6
+            flexi-laptops die kunnen worden uitgeleend. Alle laptops moesten
+            bovendien draadloos kunnen functioneren. Op elke werkplek werd een
+            VoIP-telefoon voorzien, en de werkplekken zijn verdeeld over 6
+            kantoren. In elk kantoor staat daarnaast een multifunctionele
+            printer (MFP).
+          </p>
+
+          <p>
+            Tot slot werd bepaald dat alle end-devices in het netwerk single
+            homed zijn, wat betekent dat elk apparaat slechts één
+            netwerkverbinding heeft. Dit project bood een realistische oefening
+            in het ontwerpen van een schaalbare, veilige en goed gedocumenteerde
+            bekabelingsstructuur.
+          </p>
+          <!-- mt-5 voor extra spatie hierboven en mb-3 eronder-->
+          <h3 class="mt-5 mb-3">Projectvereisten</h3>
+          <p>
+            Hieronder vind je een overzicht van de belangrijkste instructies die
+            als basis dienden voor het bekabelingsschema en de verdere
+            uitwerking van het project.
+          </p>
+          <ul class="project-list">
+            <li>
+              Het kantoor bestaat uit een gelijkvloers en een eerste verdieping
+              (hoogte tussen verdiepingen: 4 meter).
+            </li>
+            <li>Er werken 24 mensen, elk met een eigen bureau of werkplek.</li>
+            <li>
+              Voor de werkzaamheden zijn 2 on-premises servers nodig, met
+              beperkte fysieke toegang.
+            </li>
+            <li>
+              De firma beschikt over 20 desktops en 10 laptops, waarvan 6
+              flexi-laptops die kunnen worden uitgeleend.
+            </li>
+            <li>Alle laptops moeten draadloos kunnen werken.</li>
+            <li>Op elke werkplek wordt een VoIP-telefoon voorzien.</li>
+            <li>
+              De werkplekken zijn verdeeld over 6 kantoren binnen het gebouw.
+            </li>
+            <li>In elk kantoor staat een multifunctionele printer (MFP).</li>
+            <li>Alle end-devices in het netwerk zijn single homed.</li>
+          </ul>
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <h4 class="mt-4 mb-3">Van vereisten naar ontwerp</h4>
+          <p>
+            Op basis van deze uitgangspunten werd het eigenlijke
+            bekabelingsschema ontworpen. Hierin zie je hoe de serverkast
+            centraal geplaatst werd, hoe de bekabeling naar de werkplekken en
+            wandcontactdozen verloopt, en waar de wifi access points strategisch
+            zijn voorzien om overal een stabiele draadloze verbinding te
+            garanderen.
+          </p>
+          <!-- justify-content-center om de afbeelding te centreren-->
+          <div class="row justify-content-center">
+            <figure class="figure col-12 col-md-10 text-center">
+              <img
+                src="assets/images/Bekabelingsplan.jpg"
+                alt="Bekabelingsschema van het kantoor"
+                class="figure-img img-fluid rounded"
+              />
+              <figcaption class="figure-caption text-muted mt-3">
+                <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+                Overzicht van het bekabelingsschema met serverkast, werkplekken
+                en access points.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h4 class="mt-4 mb-3">Visualisatie rack layout</h4>
+          <p>
+            Naast het bekabelingsschema werd ook een rack layout opgesteld om de
+            fysieke opstelling van de netwerkapparatuur overzichtelijk weer te
+            geven. In deze visualisatie zie je hoe de serverkast is ingericht,
+            met een duidelijke scheiding tussen switches, patchpanelen en
+            servers. Door de logische plaatsing van de componenten blijft het
+            rack niet alleen overzichtelijk, maar wordt ook het beheer en
+            onderhoud eenvoudiger. De layout benadrukt bovendien het belang van
+            een nette kabelorganisatie en een efficiënte indeling van de
+            beschikbare ruimte.
+          </p>
+          <!-- justify-content-center om de afbeelding te centreren-->
+          <div class="row justify-content-center">
+            <figure class="figure col-12 col-md-10 text-center">
+              <img
+                src="assets/images/Rack-layout.jpg"
+                alt="Rack layout van de serverkast"
+                class="figure-img img-fluid rounded"
+              />
+              <figcaption class="figure-caption text-muted mt-3">
+                <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+                Overzicht van de rack layout met servers, switches en
+                patchpanelen.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h4 class="mt-4 mb-3">Visualisatie patchplan</h4>
+          <p>
+            Om de verbindingen tussen patchpaneel en netwerkapparatuur
+            overzichtelijk te documenteren, werd een patchplan opgesteld. Dit
+            schema toont hoe de poorten van het patchpaneel gekoppeld zijn aan
+            de switches en servers, en hoe de bekabeling naar de verschillende
+            werkplekken en bureaus verloopt. Dankzij deze indeling blijft het
+            beheer eenvoudig en kan bij uitbreiding of onderhoud snel worden
+            nagegaan welke poort met welk apparaat verbonden is.
+          </p>
+          <!-- justify-content-center om de afbeelding te centreren-->
+          <div class="row justify-content-center">
+            <figure class="figure col-12 col-md-10 text-center">
+              <img
+                src="assets/images/Patch-plan.jpg"
+                alt="Patchplan van het netwerk"
+                class="figure-img img-fluid rounded"
+              />
+              <figcaption class="figure-caption text-muted mt-3">
+                <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+                Overzicht van het patchplan met koppeling tussen patchpaneel en
+                netwerkapparatuur.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h4 class="mt-4 mb-3">Projectafronding en kostenanalyse</h4>
+
+          <p>
+            Bij de uitwerking van dit netwerkontwerp moesten enkele mogelijke
+            obstakels in rekening worden gebracht. Zo kon de fysieke plaatsing
+            van de serverkast en de routing van de UTP-bekabeling doorheen het
+            gebouw leiden tot beperkingen in kabeltrajecten en vereiste dit
+            extra aandacht voor kabelmanagement.
+          </p>
+
+          <p>
+            Ook de strategische positionering van de wifi access points vroeg om
+            een site survey, zodat storingen door betonnen muren of metalen
+            constructies konden worden vermeden. Verder bleek het patchen van de
+            wandcontactdozen en het correct labelen van de patchpanelen
+            tijdsintensief, zeker omdat er sprake was van meerdere bureaus en
+            verdiepingen.
+          </p>
+
+          <p>
+            Vanuit technisch oogpunt was het belangrijk dat de switches
+            voldoende throughput en PoE-capaciteit boden voor VoIP-telefoons en
+            access points. Daarnaast werd redundantie voorzien om single points
+            of failure te vermijden.
+          </p>
+
+          <p>
+            Termen als bandbreedte-allocatie, latency en cross-talk waren
+            hierbij niet louter vakjargon, maar reële aandachtspunten die de
+            stabiliteit van het netwerk beïnvloedden.
+          </p>
+
+          <p>
+            Tot slot werd ook het totale kostenplaatje in kaart gebracht. Voor
+            dit project bedroeg de investering
+            <strong>&euro; 10.863</strong>, inclusief de aanschaf van
+            serverkast, switches, access points, VoIP-toestellen, patchpanelen,
+            racks en bekabelingsmateriaal.
+          </p>
+
+          <p>
+            Hoewel dit bedrag aanzienlijk leek, werd het gerechtvaardigd door
+            het belang van kwalitatief materiaal en een robuuste infrastructuur.
+            Hoogwaardige bekabeling en betrouwbare apparatuur zorgden niet
+            alleen voor een stabiele werking en minder storingen, maar
+            verlengden ook de levensduur van het netwerk en beperkten
+            toekomstige onderhoudskosten.
+          </p>
+
+          <p>
+            Zo vormde deze investering een solide basis voor de continuïteit en
+            efficiëntie van de organisatie.
+          </p>
+
+          <p>
+            Samengevat vormde de investering van
+            <strong>&euro; 10.863</strong> in kwalitatief materiaal en
+            bekabeling een noodzakelijke stap om een stabiel, toekomstbestendig
+            en professioneel netwerk te garanderen.
+          </p>
+          <hr />
+
+          <p>
+            Bedankt voor uw interesse in dit project en voor de waardering van
+            de technische uitwerking en documentatie. Dit toont aan dat
+            investeren in kwalitatief materiaal en een professioneel netwerk
+            essentieel blijft voor duurzame werking.
+          </p>
+        </main>
+
         <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen pt-3 voor de padding aan top -->
         <aside class="col-md-3 border-start ps-5 mb-3">
           <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
