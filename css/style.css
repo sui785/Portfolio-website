@@ -64,13 +64,12 @@ span {
   --bs-btn-bg: #006abf;
   --bs-btn-border-color: #006abf;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #113743;
-  --bs-btn-hover-border-color: #113743;
+  --bs-btn-hover-bg: #004a80; /* donkerblauw als je erover gaat */
+  --bs-btn-hover-border-color: #004a80;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #113743;
-  --bs-btn-active-border-color: #113743;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-bg: #004a80;
+  --bs-btn-active-border-color: #004a80;
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #006abf;
   --bs-btn-disabled-border-color: #006abf;
