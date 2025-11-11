@@ -10,7 +10,7 @@ body {
   width: 100%;
 }
 
-/* om lijntjes onder de linktekst te verwijderen en kleur bij hover */
+/* om lijntjes onder de linktekst te verwijderen en zelfde kleur bij hover */
 a,
 a:hover {
   text-decoration: none;
@@ -18,26 +18,26 @@ a:hover {
 }
 
 .blauw {
-  color: #006abf;
+  color: #006abf; /* thema kleur */
 }
 
 .verela {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Varela Round", sans-serif; /* lettertype voor hele site */
 }
 /* portfolio items gepersonaliseerd */
 .portfolio-item {
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /* kader rond het vakje */
   padding: 1rem; /* spaties rondom in vak */
   border-radius: 15px; /* afronding van bordervak */
-  transition: box-shadow 0.3s ease; /* afronding van bordervak */
-  background-color: #f8f9fa;
-  object-fit: cover;
+  transition: box-shadow 0.3s ease; /* effect bij hovering */
+  background-color: #f8f9fa; /* achtergrond van het vak zelfde als navbar */
+  object-fit: cover; /*  netjes in het vakje */
 }
 
 .portfolio-item img {
   width: 100%; /* vult de kolom */
   height: 200px; /* vaste hoogte */
-  object-fit: cover; /*  netjes */
+  object-fit: cover; /*  netjes in het vakje */
 }
 
 .portfolio-item:hover {
@@ -55,12 +55,12 @@ ul.project-list li {
 }
 
 span {
-  color: red;
+  color: red; /* voor de rode ster in formulier  */
 }
 
 /* om knop te personaliseren */
 .btn-submit {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #fff; /* witte tekst op knop */
   --bs-btn-bg: #006abf;
   --bs-btn-border-color: #006abf;
   --bs-btn-hover-color: #fff;
