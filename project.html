@@ -35,54 +35,57 @@
   </head>
   <!-- overal verela p-3 voor padding rondom body margin 0 geen buitenruimte en border-0 om randen te verwijderen  -->
   <body class="verela p-3 m-0 border-0">
-    <nav class="p-0 navbar navbar-expand-md bg-light container-fluid">
-      <a class="navbar-brand" href="#"
-        ><img
-          src="assets/images/logo-3.png"
-          alt="netwerk logo"
-          width="100"
-          height="100"
-        />
-      </a>
-      <!-- me-2 voor margin end -->
-      <button
-        class="navbar-toggler me-2"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              >Projecten</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- m-5 gedaan voor marges rondom header-->
-    <header class="row m-5">
-      <h1 class="col display-4 blauw">Projecten</h1>
-    </header>
-    <!-- main en aside in container om naast elkaar te kunnen doen met row en cols -->
+    <!-- alles gecentreerd -->
     <div class="container">
-      <div class="row">
-        <main class="col-md-9 mb-4">
+      <nav class="p-0 navbar navbar-expand-md bg-light">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/images/logo-3.png"
+            alt="netwerk logo"
+            width="100"
+            height="100"
+          />
+        </a>
+        <!-- me-2 voor margin end -->
+        <button
+          class="navbar-toggler me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Projecten</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- header, main en aside in container om naast elkaar te kunnen doen met row en cols -->
+      <div class="container row">
+        <!-- pt-5 padding top en pb-3 voor bottom -->
+        <header class="row pt-5 pb-3">
+          <!-- display-4 voor grote titel -->
+          <h1 class="col display-4 blauw">Projecten</h1>
+        </header>
+        <!-- md-9 voor tekst naast md-3 foto en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
+        <main class="col-md-9 pe-3 mb-4">
           <h2 class="mb-3">Webwizz project</h2>
           <p>
             In dit project stond het uittekenen van een gestructureerd
@@ -173,31 +176,67 @@
           </div>
 
           <h4 class="mt-4 mb-3">Visualisatie rack layout</h4>
-          <p>
-            Naast het bekabelingsschema werd ook een rack layout opgesteld om de
-            fysieke opstelling van de netwerkapparatuur overzichtelijk weer te
-            geven. In deze visualisatie zie je hoe de serverkast is ingericht,
-            met een duidelijke scheiding tussen switches, patchpanelen en
-            servers. Door de logische plaatsing van de componenten blijft het
-            rack niet alleen overzichtelijk, maar wordt ook het beheer en
-            onderhoud eenvoudiger. De layout benadrukt bovendien het belang van
-            een nette kabelorganisatie en een efficiënte indeling van de
-            beschikbare ruimte.
-          </p>
-          <!-- justify-content-center om de afbeelding te centreren-->
-          <div class="row justify-content-center">
-            <figure class="figure col-12 col-md-10 text-center">
-              <img
-                src="assets/images/Rack-layout.jpg"
-                alt="Rack layout van de serverkast"
-                class="figure-img img-fluid rounded"
-              />
-              <figcaption class="figure-caption text-muted mt-3">
-                <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
-                Overzicht van de rack layout met servers, switches en
-                patchpanelen.
-              </figcaption>
-            </figure>
+          <!-- tekst en afbeelding in row en cols gedaan om ze naast elkaar te laten zien -->
+          <div class="row mt-4 mb-3">
+            <!-- afbeelding md-6 om halve col in te nemen bij groot scherm -->
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="assets/images/Rack-layout.jpg"
+                  alt="Rack layout van de serverkast"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+                  Overzicht van de rack layout met servers, switches en
+                  patchpanelen.
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- tekst md-6 om halve col in te nemen bij groot scherm -->
+            <div class="col-md-6">
+              <p>
+                Naast het bekabelingsschema werd ook een uitgebreide rack layout
+                opgesteld om de fysieke opstelling van de netwerkapparatuur
+                overzichtelijk weer te geven. Deze visualisatie vormt een
+                belangrijk hulpmiddel bij het plannen en beheren van de
+                infrastructuur.
+              </p>
+              <p>
+                In de layout zie je hoe de serverkast is ingericht, met een
+                duidelijke scheiding tussen switches, patchpanelen en servers.
+                Door de logische plaatsing van de componenten blijft het rack
+                niet alleen overzichtelijk, maar wordt ook het beheer en
+                onderhoud eenvoudiger.
+              </p>
+              <p>
+                De indeling benadrukt bovendien het belang van een nette
+                kabelorganisatie en een efficiënte benutting van de beschikbare
+                ruimte. Een goed gestructureerde rack layout draagt bij aan
+                stabiliteit, voorkomt fouten tijdens uitbreidingen en maakt het
+                eenvoudiger om storingen snel te verhelpen.
+              </p>
+              <p>
+                Zo vormt de rack layout samen met het bekabelingsschema een
+                solide basis voor een professioneel en duurzaam netwerkbeheer.
+              </p>
+              <p>
+                Daarnaast biedt de visualisatie een waardevol communicatiemiddel
+                voor collega's en externe partijen. Het maakt complexe
+                infrastructuur begrijpelijker en zorgt ervoor dat iedereen snel
+                inzicht krijgt in de structuur van het netwerk. Dit bevordert
+                samenwerking en voorkomt misverstanden bij onderhoud of
+                uitbreidingen.
+              </p>
+              <p>
+                Tot slot legt de rack layout de basis voor toekomstige
+                schaalbaarheid. Wanneer nieuwe servers of netwerkcomponenten
+                moeten worden toegevoegd, kan dit eenvoudig worden gepland
+                zonder dat de bestaande structuur in het gedrang komt. Zo blijft
+                het netwerk flexibel en klaar voor groei.
+              </p>
+            </div>
           </div>
 
           <h4 class="mt-4 mb-3">Visualisatie patchplan</h4>
@@ -211,20 +250,18 @@
             nagegaan welke poort met welk apparaat verbonden is.
           </p>
           <!-- justify-content-center om de afbeelding te centreren-->
-          <div class="row justify-content-center">
-            <figure class="figure col-12 col-md-10 text-center">
-              <img
-                src="assets/images/Patch-plan.jpg"
-                alt="Patchplan van het netwerk"
-                class="figure-img img-fluid rounded"
-              />
-              <figcaption class="figure-caption text-muted mt-3">
-                <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
-                Overzicht van het patchplan met koppeling tussen patchpaneel en
-                netwerkapparatuur.
-              </figcaption>
-            </figure>
-          </div>
+          <figure class="figure text-center">
+            <img
+              src="assets/images/Patch-plan.jpg"
+              alt="Patchplan van het netwerk"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption text-muted mt-3">
+              <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+              Overzicht van het patchplan met koppeling tussen patchpaneel en
+              netwerkapparatuur.
+            </figcaption>
+          </figure>
 
           <h4 class="mt-4 mb-3">Projectafronding en kostenanalyse</h4>
 
@@ -296,7 +333,7 @@
           </p>
         </main>
 
-        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen pt-3 voor de padding aan top -->
+        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen -->
         <aside class="col-md-3 border-start ps-5 mb-3">
           <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
           <p>
@@ -320,22 +357,24 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/" target="_blank">
-                <i class="bi bi-twitter blauw fs-5"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="bi bi-facebook blauw fs-5"></i>
+              <a href="mailto:usman.khan@mail.be">
+                <i class="bi bi-envelope-at-fill blauw fs-5"></i>
               </a>
             </li>
           </ul>
+          <div class="text-uppercase fs-5 fw-bold pt-5 pb-3">
+            <strong>Links</strong><br />
+          </div>
+          <a href="index.html">Home</a><br /><br />
+          <a href="portfolio.html">Portfolio</a><br /><br />
+          <a href="project.html">Projecten</a><br /><br />
+          <a href="contact.html">Contactformulier</a><br />
         </aside>
       </div>
     </div>
 
     <!-- d-flex voor horizontale layout p-4 voor zij-padding small voor kleinere letters  -->
-    <footer class="container-fluid bg-light small p-4 d-flex">
+    <footer class="bg-light small p-4 d-flex">
       <!-- text-start voor links align -->
       <div class="text-start">
         <strong>Links</strong><br />
@@ -348,14 +387,13 @@
       <!-- Socials gecentreerd door automatische margins met mx-auto in d-flex -->
       <div class="mx-auto text-center">
         <strong>Socials</strong><br /><br />
-        <a href="https://twitter.com/" target="_blank">Twitter</a> -
         <a
           href="https://www.linkedin.com/in/usman-khan-3ba831137/"
           target="_blank"
           >LinkedIn</a
         >
-        - <a href="https://github.com/sui785" target="_blank">Github</a
-        ><br /><br />
+        - <a href="https://github.com/sui785" target="_blank">Github</a> -
+        <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
         <small>Usman Khan - 2025 - &copy; Alle rechten voorbehouden</small>
       </div>
     </footer>
