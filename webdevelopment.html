@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity</title>
+    <!-- resetten van browsers -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Varela font ref link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- eigen geschreven css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript files -->
+
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <!-- overal verela font, p-3 voor padding rondom body margin 0 geen buitenruimte en border-0 om randen te verwijderen  -->
+  <body class="verela p-3 m-0 border-0">
+    <!-- header met navbar fluid voor volledige breedte -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md bg-light">
+        <!-- alles in nav gecentreerd -->
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="assets/images/logo-3.png"
+              alt="netwerk logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <!-- me-2 voor margin end -->
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Projecten</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- alles centreren in container -->
+    <div class="container">
+      <!-- main en aside in container om naast elkaar te kunnen doen met row en cols my-5 voor margin boven en beneden -->
+      <div class="row my-5">
+        <!-- md-9 voor tekst naast md-3 aside en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
+        <main class="col-md-9 pe-3 mb-4">
+          <!-- display-4 voor grote titel pt-4 voor padding bovenaan en mb-3 voor marge onder -->
+          <h1 class="col display-4 blauw pt-4 mb-3">WebForge Project</h1>
+
+          <!-- mb-3 voor marge onder -->
+          <h2 class="h3 mb-3">Een fundament voor digitale aanwezigheid</h2>
+          <p>
+            Dit project draaide om het ontwikkelen van een moderne en
+            toegankelijke website voor een organisatie die haar diensten online
+            wilde presenteren. Het doel was om een schaalbare en
+            gebruiksvriendelijke omgeving te creëren waarin bezoekers eenvoudig
+            informatie konden vinden, terwijl de code gestructureerd en
+            onderhoudsvriendelijk bleef. Het project combineerde technische
+            keuzes met designprincipes, zodat webdevelopment niet alleen een
+            kwestie van programmeren werd, maar ook van gebruikerservaring en
+            toegankelijkheid.
+          </p>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="https://pixabay.com/photos/html-web-design-web-developer-1873538/"
+                  alt="HTML code op scherm"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Semantische HTML als basis voor structuur en toegankelijkheid.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                De website werd opgebouwd met semantische HTML, zodat
+                zoekmachines en screenreaders de inhoud correct konden
+                interpreteren. Dit zorgde voor een stevige basis waarop verdere
+                functionaliteit kon worden gebouwd.
+              </p>
+              <p>
+                Door duidelijke tags en logische hiërarchie te gebruiken, werd
+                de code niet alleen beter leesbaar voor ontwikkelaars, maar ook
+                toekomstbestendig voor uitbreidingen. Semantiek en
+                toegankelijkheid gingen hier hand in hand.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="https://pixabay.com/photos/laptop-computer-technology-keyboard-2620118/"
+                  alt="Laptop met CSS code"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  CSS en responsive design voor een moderne uitstraling.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Styling werd verzorgd met CSS en Bootstrap, zodat de website
+                zich automatisch aanpaste aan verschillende schermformaten. Dit
+                maakte de site bruikbaar op zowel desktops als mobiele
+                toestellen.
+              </p>
+              <p>
+                Kleuren, typografie en layout werden zorgvuldig gekozen om een
+                professionele uitstraling te combineren met leesbaarheid. Het
+                resultaat was een visueel gebalanceerde interface die de inhoud
+                versterkte.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="https://pixabay.com/photos/javascript-computer-code-technology-3987480/"
+                  alt="JavaScript code"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  JavaScript voor interactieve elementen en dynamische content.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Interactiviteit werd toegevoegd met JavaScript. Denk aan
+                dynamische navigatie, formulieren met validatie en interactieve
+                kaarten. Dit gaf de website meer diepgang en functionaliteit.
+              </p>
+              <p>
+                Door JavaScript modulair op te bouwen, bleef de code
+                overzichtelijk en eenvoudig te onderhouden. Functionaliteit kon
+                stap voor stap worden uitgebreid zonder de basis te verstoren.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="https://pixabay.com/photos/web-website-internet-technology-3706562/"
+                  alt="Website monitoring dashboard"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Monitoring en optimalisatie voor prestaties en
+                  betrouwbaarheid.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Na oplevering werd de website gemonitord met tools voor
+                performance en SEO. Dit gaf inzicht in laadtijden,
+                bezoekersgedrag en mogelijke verbeterpunten.
+              </p>
+              <p>
+                Optimalisatie werd een continu proces: caching, compressie en
+                code‑refactoring zorgden ervoor dat de site snel en betrouwbaar
+                bleef, ook bij groeiend verkeer.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <h2 class="h3 mt-4 mb-3">Reflectie</h2>
+          <p>
+            Het WebForge project liet zien dat webdevelopment niet alleen draait
+            om code, maar ook om gebruikerservaring en onderhoudbaarheid. Door
+            semantiek, design en interactiviteit te combineren, werd een website
+            gebouwd die toekomstbestendig is.
+          </p>
+          <p>
+            Het resultaat was een digitale omgeving die klaar is voor groei en
+            die bezoekers een professionele en toegankelijke ervaring biedt. Het
+            project combineerde techniek, design en optimalisatie tot één
+            samenhangend geheel.
+          </p>
+          <hr />
+          <p>
+            Bedankt voor uw interesse in dit project en voor de waardering van
+            de technische uitwerking en documentatie. Dit toont aan dat
+            investeren in webdevelopment essentieel blijft voor digitale
+            zichtbaarheid en vertrouwen.
+          </p>
+        </main>
+
+        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen mb-3 voor margin bottom en pt-5 voor padding top-->
+        <aside class="col-md-3 border-start ps-5 mb-3 pt-5">
+          <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
+          <p>
+            Usman Khan<br />
+            <a href="mailto:usman.khan@mail.be">usman.khan@mail.be</a><br />
+            +32 456 78 91 23
+          </p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin blauw fs-5"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://github.com/sui785" target="_blank">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:usman.khan@mail.be">
+                <i class="bi bi-envelope-at-fill blauw fs-5"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="text-uppercase fs-5 fw-bold pt-5 pb-3">
+            <strong>Links</strong><br />
+          </div>
+          <a href="index.html">Home</a><br /><br />
+          <a href="portfolio.html">Portfolio</a><br /><br />
+          <a href="project.html">Projecten</a><br /><br />
+          <a href="contact.html">Contactformulier</a><br />
+        </aside>
+      </div>
+    </div>
+
+    <!-- p-4 voor zij-padding small voor kleinere letters fluid voor volledige breedte  -->
+    <footer class="bg-light small p-4 container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- Links on the left -->
+          <div class="col-4 text-start">
+            <strong>Links</strong><br />
+            <a href="index.html">Home</a><br />
+            <a href="portfolio.html">Portfolio</a><br />
+            <a href="project.html">Projecten</a><br />
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <!-- Socials centered -->
+          <div class="col-4 text-center">
+            <strong>Socials</strong><br /><br />
+            <a
+              href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            - <a href="https://github.com/sui785" target="_blank">Github</a> -
+            <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <small
+              >Usman Khan - <time id="year"></time> - &copy; Alle rechten
+              voorbehouden</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
