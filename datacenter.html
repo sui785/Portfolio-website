@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datacenter Bezoek</title>
+    <!-- resetten van browsers -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Varela font ref link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- eigen geschreven css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- LEAFLET -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <!-- JavaScript files -->
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script src="js/map.js" defer></script>
+
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <!-- overal verela font, p-3 voor padding rondom body margin 0 geen buitenruimte en border-0 om randen te verwijderen  -->
+  <body class="verela p-3 m-0 border-0">
+    <!-- header met navbar fluid voor volledige breedte -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md bg-light">
+        <!-- alles in nav gecentreerd -->
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="assets/images/logo-3.png"
+              alt="netwerk logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <!-- me-2 voor margin end -->
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Projecten</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- alles centreren in container -->
+    <div class="container">
+      <!-- main en aside in container om naast elkaar te kunnen doen met row en cols my-5 voor margin boven en beneden -->
+      <div class="row my-5">
+        <!-- md-9 voor tekst naast md-3 aside en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
+        <main class="col-md-9 pe-3 mb-4">
+          <!-- display-4 voor grote titel pt-4 voor padding bovenaan en mb-3 voor marge onder -->
+          <h1 class="col display-4 blauw pt-4 mb-3">
+            Datacenter United Bezoek
+          </h1>
+
+          <!-- mb-3 voor marge onder -->
+          <h2 class="h3 mb-3">Een blik achter de schermen</h2>
+          <p>
+            Tijdens ons bezoek aan Datacenter United in Antwerpen kregen we een
+            unieke inkijk in de wereld van professionele datacenters. Het doel
+            van dit project was om de infrastructuur, beveiliging en
+            energievoorziening van een modern datacenter te begrijpen. We zagen
+            hoe redundantie, koeling en strikte toegangscontrole samenkomen om
+            een omgeving te creëren waarin data veilig en continu beschikbaar
+            blijft.
+          </p>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="assets/images/datacenter/foto1.jpg"
+                  alt="Serverracks in het datacenter"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Serverracks met gestructureerde bekabeling en koeling.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                De serverracks waren voorzien van gestructureerde bekabeling en
+                redundante verbindingen. Dit voorkomt dat een enkele storing het
+                hele netwerk platlegt. Elk rack was uitgerust met monitoring en
+                sensoren die temperatuur en luchtvochtigheid constant in de
+                gaten houden.
+              </p>
+              <p>
+                Het viel op hoe strak en overzichtelijk de bekabeling was
+                aangelegd. Dit maakt onderhoud eenvoudiger en verkleint de kans
+                op menselijke fouten. Het principe van “structured cabling” dat
+                we eerder in ons WebWizz project toepasten, zagen we hier op
+                grote schaal terug.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="/assets/images/datacenter/foto2.jpg"
+                  alt="Beveiligde toegang tot het datacenter"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Strikte toegangscontrole bij de ingang. <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Toegangscontrole was een cruciaal onderdeel van het datacenter.
+                Alleen geautoriseerde personen konden via badges en biometrische
+                verificatie toegang krijgen. Dit garandeert dat gevoelige
+                infrastructuur niet toegankelijk is voor onbevoegden.
+              </p>
+              <p>
+                Het bezoek maakte duidelijk dat fysieke beveiliging minstens zo
+                belangrijk is als digitale beveiliging. Zonder strikte controle
+                zou de data van honderden klanten kwetsbaar zijn.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="assets/images/datacenter/foto3.jpg"
+                  alt="Koeling en energievoorziening"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Koeling en energievoorziening met redundantie. <br />&copy;
+                  Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Een datacenter draait niet alleen op servers, maar ook op een
+                robuuste energievoorziening. We zagen hoe noodgeneratoren en
+                UPS-systemen klaarstaan om bij stroomuitval onmiddellijk in te
+                grijpen. Koeling gebeurt via efficiënte systemen die warmte
+                afvoeren en de racks op een constante temperatuur houden.
+              </p>
+              <p>
+                Deze redundantie zorgt ervoor dat de dienstverlening nooit
+                onderbroken wordt. Zelfs bij een calamiteit blijft de data
+                beschikbaar en veilig.
+              </p>
+            </div>
+          </div>
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <!-- Plaats vrij voor interactieve Leaflet map -->
+          <h2 class="h3 mt-4 mb-3">Interactieve locatiekaart</h2>
+          <p>
+            Hieronder voorzien we een interactieve kaart van Datacenter United
+            in Antwerpen. Deze kaart wordt gemaakt met
+            <strong>Leaflet.js</strong> en toont de locatie van het datacenter.
+            Zo kan men eenvoudig zien waar het datacenter zich bevindt en hoe
+            het bereikbaar is.
+          </p>
+          <section id="dataMap" style="height: 500px"></section>
+
+          <!-- Leaflet script toevoegen -->
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <h2 class="h3 mt-4 mb-3">Reflectie</h2>
+          <p>
+            Het bezoek aan Datacenter United gaf ons een concreet beeld van hoe
+            infrastructuur, beveiliging en energie samenkomen in een
+            professionele omgeving. We zagen dat de principes die we in kleinere
+            projecten toepassen, zoals gestructureerde bekabeling en
+            toegangscontrole, hier op grote schaal worden uitgevoerd.
+          </p>
+          <p>
+            Het resultaat was een beter begrip van de complexiteit en het belang
+            van datacenters in onze digitale samenleving. Dit project
+            combineerde techniek, organisatie en fysieke beveiliging tot één
+            samenhangend geheel.
+          </p>
+          <hr />
+          <p>
+            Bedankt voor uw interesse in dit project en voor de waardering van
+            de technische uitwerking en documentatie. Dit toont aan dat
+            investeren in datacenters essentieel blijft voor duurzame werking en
+            vertrouwen.
+          </p>
+        </main>
+
+        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen mb-3 voor margin bottom en pt-5 voor padding top-->
+        <aside class="col-md-3 border-start ps-5 mb-3 pt-5">
+          <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
+          <p>
+            Usman Khan<br />
+            <a href="mailto:usman.khan@mail.be">usman.khan@mail.be</a><br />
+            +32 456 78 91 23
+          </p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin blauw fs-5"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://github.com/sui785" target="_blank">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:usman.khan@mail.be">
+                <i class="bi bi-envelope-at-fill blauw fs-5"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="text-uppercase fs-5 fw-bold pt-5 pb-3">
+            <strong>Links</strong><br />
+          </div>
+          <a href="index.html">Home</a><br /><br />
+          <a href="portfolio.html">Portfolio</a><br /><br />
+          <a href="project.html">Projecten</a><br /><br />
+          <a href="contact.html">Contactformulier</a><br />
+        </aside>
+      </div>
+    </div>
+
+    <!-- p-4 voor zij-padding small voor kleinere letters fluid voor volledige breedte  -->
+    <footer class="bg-light small p-4 container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- Links on the left -->
+          <div class="col-4 text-start">
+            <strong>Links</strong><br />
+            <a href="index.html">Home</a><br />
+            <a href="portfolio.html">Portfolio</a><br />
+            <a href="project.html">Projecten</a><br />
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <!-- Socials centered -->
+          <div class="col-4 text-center">
+            <strong>Socials</strong><br /><br />
+            <a
+              href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            - <a href="https://github.com/sui785" target="_blank">Github</a> -
+            <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <small
+              >Usman Khan - <time id="year"></time> - &copy; Alle rechten
+              voorbehouden</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

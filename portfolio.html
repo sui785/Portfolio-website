@@ -13,7 +13,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <!-- Bootstrap CSS icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -31,61 +31,68 @@
     ></script>
     <!-- eigen geschreven css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript files -->
+
+    <script src="js/script.js" defer></script>
   </head>
 
   <!-- overal verela font, p-3 voor padding rondom body margin 0 geen buitenruimte en border-0 om randen te verwijderen  -->
   <body class="verela p-3 m-0 border-0">
-    <!-- alles gecentreerd -->
-    <div class="container">
-      <nav class="p-0 navbar navbar-expand-md bg-light">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="assets/images/logo-3.png"
-            alt="netwerk logo"
-            width="100"
-            height="100"
-          />
-        </a>
-        <!-- me-2 voor margin end -->
-        <button
-          class="navbar-toggler me-2"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">Projecten</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <!-- header met navbar fluid voor volledige breedte -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md bg-light">
+        <!-- alles in nav gecentreerd -->
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="assets/images/logo-3.png"
+              alt="netwerk logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <!-- me-2 voor margin end -->
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Projecten</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-      <!-- header, main en aside in container om naast elkaar te kunnen doen met row en cols -->
-      <div class="container row">
-        <!-- pt-5 padding top en pb-3 voor bottom -->
-        <header class="row pt-5 pb-3">
-          <!-- display-4 voor grote titel -->
-          <h1 class="col display-4 blauw">Portfolio</h1>
-        </header>
-        <!-- md-9 voor tekst naast md-3 foto en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
+    </header>
+    <!-- alles centreren in container -->
+    <div class="container">
+      <!-- main en aside in container om naast elkaar te kunnen doen met row en cols my-5 voor margin boven en beneden -->
+      <div class="row my-5">
+        <!-- md-9 voor tekst naast md-3 aside en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
         <main class="col-md-9 pe-3 mb-4">
+          <!-- display-4 voor grote titel pt-4 voor padding top en mb-3 voor margin bottom-->
+          <h1 class="col display-4 blauw pt-4 mb-3">Portfolio</h1>
           <section id="overzicht" class="row">
             <div class="col-12 mb-3">
               <p>
@@ -128,7 +135,7 @@
                     Cybersecurity
                   </h2>
                   <p class="h6 small">Sterke digitale verdediging</p>
-                  <a href="project.html" target="_blank">
+                  <a href="cybersecurity.html" target="_blank">
                     <figure>
                       <img
                         src="assets/images/Sfeerfoto-4.jpg"
@@ -219,8 +226,8 @@
             </div>
           </section>
         </main>
-        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen -->
-        <aside class="col-md-3 border-start ps-5 mb-3">
+        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen mb-3 voor margin bottom en pt-5 voor padding top-->
+        <aside class="col-md-3 border-start ps-5 mb-3 pt-5">
           <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
           <p>
             Usman Khan<br />
@@ -257,31 +264,42 @@
           <a href="contact.html">Contactformulier</a><br />
         </aside>
       </div>
-
-      <!-- d-flex voor horizontale layout p-4 voor zij-padding small voor kleinere letters  -->
-      <footer class="bg-light small p-4 d-flex">
-        <!-- text-start voor links align -->
-        <div class="text-start">
-          <strong>Links</strong><br />
-          <a href="index.html">Home</a><br />
-          <a href="portfolio.html">Portfolio</a><br />
-          <a href="project.html">Projecten</a><br />
-          <a href="contact.html">Contact</a>
-        </div>
-
-        <!-- Socials gecentreerd door automatische margins met mx-auto in d-flex -->
-        <div class="mx-auto text-center">
-          <strong>Socials</strong><br /><br />
-          <a
-            href="https://www.linkedin.com/in/usman-khan-3ba831137/"
-            target="_blank"
-            >LinkedIn</a
-          >
-          - <a href="https://github.com/sui785" target="_blank">Github</a> -
-          <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
-          <small>Usman Khan - 2025 - &copy; Alle rechten voorbehouden</small>
-        </div>
-      </footer>
     </div>
+
+    <!-- p-4 voor zij-padding small voor kleinere letters fluid voor volledige breedte  -->
+    <footer class="bg-light small p-4 container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- Links on the left -->
+          <div class="col-4 text-start">
+            <strong>Links</strong><br />
+            <a href="index.html">Home</a><br />
+            <a href="portfolio.html">Portfolio</a><br />
+            <a href="project.html">Projecten</a><br />
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <!-- Socials centered -->
+          <div class="col-4 text-center">
+            <strong>Socials</strong><br /><br />
+            <a
+              href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            - <a href="https://github.com/sui785" target="_blank">Github</a> -
+            <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <small
+              >Usman Khan - <time id="year"></time> - &copy; Alle rechten
+              voorbehouden</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity</title>
+    <!-- resetten van browsers -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Varela font ref link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- eigen geschreven css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript files -->
+
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <!-- overal verela font, p-3 voor padding rondom body margin 0 geen buitenruimte en border-0 om randen te verwijderen  -->
+  <body class="verela p-3 m-0 border-0">
+    <!-- header met navbar fluid voor volledige breedte -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md bg-light">
+        <!-- alles in nav gecentreerd -->
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="assets/images/logo-3.png"
+              alt="netwerk logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <!-- me-2 voor margin end -->
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Projecten</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- alles centreren in container -->
+    <div class="container">
+      <!-- main en aside in container om naast elkaar te kunnen doen met row en cols my-5 voor margin boven en beneden -->
+      <div class="row my-5">
+        <!-- md-9 voor tekst naast md-3 aside en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
+        <main class="col-md-9 pe-3 mb-4">
+          <!-- display-4 voor grote titel pt-4 voor padding bovenaan en mb-3 voor marge onder -->
+          <h1 class="col display-4 blauw pt-4 mb-3">CyberShield Project</h1>
+
+          <!-- mb-3 voor marge onder -->
+          <h2 class="h3 mb-3">Een digitale verdedigingslinie</h2>
+          <p>
+            Dit denkbeeldige project draaide om het ontwerpen van een moderne
+            cybersecurity-architectuur voor een organisatie die zowel
+            on-premises servers als cloudservices gebruikt. Het doel was om een
+            veilige en schaalbare omgeving te creëren waarin medewerkers zonder
+            zorgen konden werken, terwijl gevoelige data beschermd bleef tegen
+            bedreigingen van buitenaf én binnenuit. Het project combineerde
+            technische maatregelen met organisatorische afspraken, zodat
+            beveiliging niet alleen een kwestie van technologie werd, maar ook
+            van cultuur en bewustzijn.
+          </p>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="/assets/images/cybersecurity/foto1.jpg"
+                  alt="Illustratie van een firewall"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Firewall als eerste verdedigingslaag tegen aanvallen.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Binnen het netwerk werkten vijftig medewerkers, elk met hun
+                eigen werkstation of laptop. Omdat er zowel vaste als mobiele
+                toestellen aanwezig waren, werd gekozen voor een zero-trust
+                model: niemand kreeg automatisch toegang, elke verbinding moest
+                expliciet worden geverifieerd. Dit principe werd ondersteund
+                door firewalls die niet alleen verkeer filterden, maar ook
+                fungeerden als poortwachters voor interne segmenten. Zo werd
+                voorkomen dat een enkele kwetsbaarheid zich kon verspreiden door
+                het hele netwerk.
+              </p>
+              <p>
+                Door de firewall slim te configureren en te combineren met
+                intrusion detection systemen, ontstond een gelaagde verdediging
+                die aanvallen kon herkennen en blokkeren voordat ze schade
+                aanrichtten. Deze combinatie maakte het mogelijk om zowel
+                bekende patronen van aanvallen te detecteren als afwijkend
+                gedrag te signaleren dat kon wijzen op nieuwe dreigingen. Het
+                beheerteam kreeg hierdoor niet alleen meer controle, maar ook
+                beter inzicht in de dagelijkse werking van het netwerk. Zo werd
+                de infrastructuur niet alleen veiliger, maar ook transparanter
+                en eenvoudiger te beheren, wat de organisatie een stevige basis
+                gaf voor toekomstige uitbreidingen.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="/assets/images/cybersecurity/foto2.jpg"
+                  alt="Slot op toetsenbord"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Het slot als symbool voor data-bescherming en
+                  toegangscontrole. <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Toegangscontrole was een tweede pijler van het project. Elk
+                account werd voorzien van multifactor-authenticatie, zodat een
+                wachtwoord alleen niet voldoende was om toegang te krijgen. Dit
+                verkleinde de kans op misbruik aanzienlijk en maakte het voor
+                aanvallers veel moeilijker om binnen te dringen.
+              </p>
+              <p>
+                Het slot op het toetsenbord symboliseert deze aanpak: data
+                blijft beschermd zolang de juiste sleutels worden gebruikt.
+                Encryptie van gevoelige bestanden en communicatiekanalen zorgde
+                ervoor dat zelfs bij onderschepping de informatie onleesbaar
+                bleef. Zo werd vertrouwelijkheid gegarandeerd, zowel binnen het
+                kantoor als bij externe verbindingen.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="/assets/images/cybersecurity/foto4.jpg"
+                  alt="Netwerkvisualisatie cybersecurity"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Abstracte visualisatie van netwerkbeveiliging en monitoring.
+                  <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Monitoring en zichtbaarheid waren cruciaal om het netwerk gezond
+                te houden. Daarom werd een SIEM-platform geïmplementeerd dat
+                alle logs verzamelde en analyseerde. Het dashboard gaf real-time
+                inzicht in verdachte activiteiten, zoals ongebruikelijke
+                loginpogingen of afwijkende datastromen.
+              </p>
+              <p>
+                Door deze informatie centraal te bundelen, kon het team sneller
+                reageren op incidenten en trends herkennen die anders verborgen
+                zouden blijven. Monitoring werd zo niet langer een reactieve
+                taak, maar een proactief instrument dat de organisatie hielp om
+                bedreigingen voor te zijn.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <div class="row mt-4 mb-3">
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="/assets/images/cybersecurity/foto3.png"
+                  alt="Incident response concept"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  Conceptuele weergave van incident response en
+                  dreigingsanalyse. <br />&copy; Pixabay
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Incident response vormde de laatste verdedigingslaag. Het plan
+                beschreef duidelijk welke stappen moesten worden gezet bij een
+                aanval: detectie, analyse, containment, herstel en evaluatie.
+                Door deze structuur wist iedereen wat er van hem of haar
+                verwacht werd.
+              </p>
+              <p>
+                Het incident response plan werd regelmatig getest met
+                simulaties, zodat het team vertrouwd raakte met de procedures.
+                Dit zorgde ervoor dat downtime tot een minimum beperkt bleef en
+                dat de organisatie snel weer operationeel kon zijn na een
+                incident. Het project bewees dat voorbereiding en oefening net
+                zo belangrijk zijn als technologie zelf.
+              </p>
+            </div>
+          </div>
+
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <h2 class="h3 mt-4 mb-3">Reflectie</h2>
+          <p>
+            Het CyberShield project liet zien dat cybersecurity niet alleen
+            draait om firewalls en encryptie, maar ook om mensen en processen.
+            Door medewerkers bewust te maken van hun rol en door duidelijke
+            afspraken te maken, werd een omgeving gecreëerd waarin veiligheid
+            vanzelfsprekend werd.
+          </p>
+          <p>
+            Het resultaat was een toekomstbestendig netwerk dat klaar is voor
+            groei, maar vooral bestand tegen de steeds complexere dreigingen van
+            de digitale wereld. Het project combineerde techniek, organisatie en
+            cultuur tot één samenhangend geheel.
+          </p>
+          <hr />
+          <p>
+            Bedankt voor uw interesse in dit project en voor de waardering van
+            de technische uitwerking en documentatie. Dit toont aan dat
+            investeren in cybersecurity essentieel blijft voor duurzame werking
+            en vertrouwen.
+          </p>
+        </main>
+
+        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen mb-3 voor margin bottom en pt-5 voor padding top-->
+        <aside class="col-md-3 border-start ps-5 mb-3 pt-5">
+          <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
+          <p>
+            Usman Khan<br />
+            <a href="mailto:usman.khan@mail.be">usman.khan@mail.be</a><br />
+            +32 456 78 91 23
+          </p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin blauw fs-5"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://github.com/sui785" target="_blank">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:usman.khan@mail.be">
+                <i class="bi bi-envelope-at-fill blauw fs-5"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="text-uppercase fs-5 fw-bold pt-5 pb-3">
+            <strong>Links</strong><br />
+          </div>
+          <a href="index.html">Home</a><br /><br />
+          <a href="portfolio.html">Portfolio</a><br /><br />
+          <a href="project.html">Projecten</a><br /><br />
+          <a href="contact.html">Contactformulier</a><br />
+        </aside>
+      </div>
+    </div>
+
+    <!-- p-4 voor zij-padding small voor kleinere letters fluid voor volledige breedte  -->
+    <footer class="bg-light small p-4 container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- Links on the left -->
+          <div class="col-4 text-start">
+            <strong>Links</strong><br />
+            <a href="index.html">Home</a><br />
+            <a href="portfolio.html">Portfolio</a><br />
+            <a href="project.html">Projecten</a><br />
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <!-- Socials centered -->
+          <div class="col-4 text-center">
+            <strong>Socials</strong><br /><br />
+            <a
+              href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            - <a href="https://github.com/sui785" target="_blank">Github</a> -
+            <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <small
+              >Usman Khan - <time id="year"></time> - &copy; Alle rechten
+              voorbehouden</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
