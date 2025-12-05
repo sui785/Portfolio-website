@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cybersecurity</title>
+    <title>Cybersecurity Project</title>
     <!-- resetten van browsers -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- Bootstrap CSS -->
@@ -72,10 +72,46 @@
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  aria-current="page"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   >Projecten</a
                 >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="webwizz.html"
+                      >Webwizz Project</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="datacenter.html"
+                      >Datacenter Bezoek</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cybersecurity Project</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="shellscripting.html"
+                      >Shell Scripting Project</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="webdevelopment.html"
+                      >Webdevelopment Project</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cablemanagement.html"
+                      >Cable Management Project</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -97,7 +133,7 @@
           <!-- mb-3 voor marge onder -->
           <h2 class="h3 mb-3">Een digitale verdedigingslinie</h2>
           <p>
-            Dit denkbeeldige project draaide om het ontwerpen van een moderne
+            Dit project draaide om het ontwerpen van een moderne
             cybersecurity-architectuur voor een organisatie die zowel
             on-premises servers als cloudservices gebruikt. Het doel was om een
             veilige en schaalbare omgeving te creëren waarin medewerkers zonder
@@ -125,28 +161,25 @@
             </div>
             <div class="col-md-6">
               <p>
-                Binnen het netwerk werkten vijftig medewerkers, elk met hun
-                eigen werkstation of laptop. Omdat er zowel vaste als mobiele
-                toestellen aanwezig waren, werd gekozen voor een zero-trust
-                model: niemand kreeg automatisch toegang, elke verbinding moest
-                expliciet worden geverifieerd. Dit principe werd ondersteund
-                door firewalls die niet alleen verkeer filterden, maar ook
-                fungeerden als poortwachters voor interne segmenten. Zo werd
-                voorkomen dat een enkele kwetsbaarheid zich kon verspreiden door
-                het hele netwerk.
+                Binnen het netwerk werkten vijftig medewerkers met hun eigen
+                werkstation of laptop. Omdat er zowel vaste als mobiele
+                toestellen waren, werd gekozen voor een zero-trust model:
+                niemand kreeg automatisch toegang, elke verbinding moest
+                expliciet worden geverifieerd. Firewalls filterden verkeer en
+                fungeerden als poortwachters voor interne segmenten, zodat
+                kwetsbaarheden zich niet door het hele netwerk konden
+                verspreiden.
               </p>
               <p>
-                Door de firewall slim te configureren en te combineren met
-                intrusion detection systemen, ontstond een gelaagde verdediging
-                die aanvallen kon herkennen en blokkeren voordat ze schade
-                aanrichtten. Deze combinatie maakte het mogelijk om zowel
-                bekende patronen van aanvallen te detecteren als afwijkend
-                gedrag te signaleren dat kon wijzen op nieuwe dreigingen. Het
-                beheerteam kreeg hierdoor niet alleen meer controle, maar ook
-                beter inzicht in de dagelijkse werking van het netwerk. Zo werd
-                de infrastructuur niet alleen veiliger, maar ook transparanter
-                en eenvoudiger te beheren, wat de organisatie een stevige basis
-                gaf voor toekomstige uitbreidingen.
+                Door firewalls slim te configureren en te combineren met
+                intrusion detection systemen ontstond een gelaagde verdediging
+                die aanvallen kon herkennen en blokkeren. Zo konden zowel
+                bekende patronen als afwijkend gedrag worden gedetecteerd. Het
+                beheerteam kreeg hierdoor meer controle en inzicht in de
+                dagelijkse werking van het netwerk. De infrastructuur werd
+                veiliger, transparanter en eenvoudiger te beheren, wat de
+                organisatie een stevige basis gaf voor toekomstige
+                uitbreidingen.
               </p>
             </div>
           </div>
@@ -190,13 +223,13 @@
             <div class="col-md-6 text-center">
               <figure class="figure">
                 <img
-                  src="/assets/images/cybersecurity/foto4.jpg"
+                  src="/assets/images/cybersecurity/foto3.jpg"
                   alt="Netwerkvisualisatie cybersecurity"
                   class="figure-img img-fluid rounded"
                 />
                 <figcaption class="figure-caption text-muted mt-3">
-                  Abstracte visualisatie van netwerkbeveiliging en monitoring.
-                  <br />&copy; Pixabay
+                  Visualisatie van netwerkbeveiliging en monitoring.
+                  <br />&copy; Pexels
                 </figcaption>
               </figure>
             </div>
@@ -223,13 +256,13 @@
             <div class="col-md-6 text-center">
               <figure class="figure">
                 <img
-                  src="/assets/images/cybersecurity/foto3.png"
+                  src="/assets/images/cybersecurity/foto4.jpg"
                   alt="Incident response concept"
                   class="figure-img img-fluid rounded"
                 />
                 <figcaption class="figure-caption text-muted mt-3">
-                  Conceptuele weergave van incident response en
-                  dreigingsanalyse. <br />&copy; Pixabay
+                  Het ongeoorloofd uitlekken van gevoelige informatie.
+                  <br />&copy; Pexels
                 </figcaption>
               </figure>
             </div>
@@ -253,7 +286,7 @@
           </div>
 
           <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
-          <h2 class="h3 mt-4 mb-3">Reflectie</h2>
+          <h3 class="h3 mt-4 mb-3">Reflectie</h3>
           <p>
             Het CyberShield project liet zien dat cybersecurity niet alleen
             draait om firewalls en encryptie, maar ook om mensen en processen.
@@ -305,13 +338,15 @@
               </a>
             </li>
           </ul>
-          <div class="text-uppercase fs-5 fw-bold pt-5 pb-3">
-            <strong>Links</strong><br />
-          </div>
-          <a href="index.html">Home</a><br /><br />
-          <a href="portfolio.html">Portfolio</a><br /><br />
-          <a href="project.html">Projecten</a><br /><br />
-          <a href="contact.html">Contactformulier</a><br />
+          <h2 class="text-uppercase fs-5 fw-bold pt-5 pb-3">
+            <strong>Projecten</strong><br />
+          </h2>
+          <a href="webwizz.html">Webwizz</a><br /><br />
+          <a href="datacenter.html">Datacenter</a><br /><br />
+          <a href="#">Cybersecurity</a><br /><br />
+          <a href="shellscripting.html">Shell Scripting</a><br /><br />
+          <a href="webdevelopment.html">Webdevelopment</a><br /><br />
+          <a href="cablemanagement.html">Cable Management</a><br />
         </aside>
       </div>
     </div>

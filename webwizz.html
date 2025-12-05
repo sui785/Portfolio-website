@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webwizz Project</title>
+    <!-- resetten van browsers -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Varela font ref link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- eigen geschreven css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript files -->
+
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <!-- overal verela font, p-3 voor padding rondom body margin 0 geen buitenruimte en border-0 om randen te verwijderen  -->
+  <body class="verela p-3 m-0 border-0">
+    <!-- header met navbar fluid voor volledige breedte -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md bg-light">
+        <!-- alles in nav gecentreerd -->
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="assets/images/logo-3.png"
+              alt="netwerk logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <!-- me-2 voor margin end -->
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  aria-current="page"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Projecten</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Webwizz Project</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="datacenter.html"
+                      >Datacenter Bezoek</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cybersecurity.html"
+                      >Cybersecurity Project</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="shellscripting.html"
+                      >Shell Scripting Project</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="webdevelopment.html"
+                      >Webdevelopment Project</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cablemanagement.html"
+                      >Cable Management Project</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- alles centreren in container -->
+    <div class="container">
+      <!-- main en aside in container om naast elkaar te kunnen doen met row en cols my-5 voor margin boven en beneden -->
+      <div class="row my-5">
+        <!-- md-9 voor tekst naast md-3 aside en pe-3 spatie zijkant en mb-4 voor spatie onderaan-->
+        <main class="col-md-9 pe-3 mb-4">
+          <!-- display-4 voor grote titel pt-4 voor padding top en mb-3 voor margin bottom-->
+          <h1 class="col display-4 blauw pt-4 mb-3">Webwizz</h1>
+          <h2 class="h3 mb-3">Structuur in verbindingen</h2>
+          <p>
+            In dit project stond het uittekenen van een gestructureerd
+            bekabelingsschema centraal, waarbij we rekening moesten houden met
+            de principes van gestructureerd bekabelen. Naast het schema
+            ontwierpen we ook een rack layout, een patch plan en een
+            aankooplijst om het volledige netwerkontwerp te ondersteunen.
+          </p>
+
+          <p>
+            Het scenario was gebaseerd op een kantooromgeving met een
+            gelijkvloers en een eerste verdieping, gescheiden door een hoogte
+            van vier meter. Binnen dit gebouw werken 24 medewerkers, elk met een
+            eigen bureau of werkplek. Voor hun werkzaamheden zijn er twee
+            on-premises servers voorzien, waarbij enkel gemachtigde personen
+            fysieke toegang hebben.
+          </p>
+
+          <p>
+            De infrastructuur omvat 20 desktops en 10 laptops, waarvan 6
+            flexi-laptops die kunnen worden uitgeleend. Alle laptops moesten
+            bovendien draadloos kunnen functioneren. Op elke werkplek werd een
+            VoIP-telefoon voorzien, en de werkplekken zijn verdeeld over 6
+            kantoren. In elk kantoor staat daarnaast een multifunctionele
+            printer (MFP).
+          </p>
+
+          <p>
+            Tot slot werd bepaald dat alle end-devices in het netwerk single
+            homed zijn, wat betekent dat elk apparaat slechts één
+            netwerkverbinding heeft. Dit project bood een realistische oefening
+            in het ontwerpen van een schaalbare, veilige en goed gedocumenteerde
+            bekabelingsstructuur.
+          </p>
+          <!-- mt-5 voor extra spatie hierboven en mb-3 eronder-->
+          <h3 class="h4 mt-5 mb-3">Projectvereisten</h3>
+          <p>
+            Hieronder vind je een overzicht van de belangrijkste instructies die
+            als basis dienden voor het bekabelingsschema en de verdere
+            uitwerking van het project.
+          </p>
+          <ul class="project-list">
+            <li>
+              Het kantoor bestaat uit een gelijkvloers en een eerste verdieping
+              (hoogte tussen verdiepingen: 4 meter).
+            </li>
+            <li>Er werken 24 mensen, elk met een eigen bureau of werkplek.</li>
+            <li>
+              Voor de werkzaamheden zijn 2 on-premises servers nodig, met
+              beperkte fysieke toegang.
+            </li>
+            <li>
+              De firma beschikt over 20 desktops en 10 laptops, waarvan 6
+              flexi-laptops die kunnen worden uitgeleend.
+            </li>
+            <li>Alle laptops moeten draadloos kunnen werken.</li>
+            <li>Op elke werkplek wordt een VoIP-telefoon voorzien.</li>
+            <li>
+              De werkplekken zijn verdeeld over 6 kantoren binnen het gebouw.
+            </li>
+            <li>In elk kantoor staat een multifunctionele printer (MFP).</li>
+            <li>Alle end-devices in het netwerk zijn single homed.</li>
+          </ul>
+          <!-- mt-4 voor extra spatie hierboven en mb-3 eronder-->
+          <h3 class="h4 mt-4 mb-3">Van vereisten naar ontwerp</h3>
+          <p>
+            Op basis van deze uitgangspunten werd het eigenlijke
+            bekabelingsschema ontworpen. Hierin zie je hoe de serverkast
+            centraal geplaatst werd, hoe de bekabeling naar de werkplekken en
+            wandcontactdozen verloopt, en waar de wifi access points strategisch
+            zijn voorzien om overal een stabiele draadloze verbinding te
+            garanderen.
+          </p>
+          <!-- justify-content-center om de afbeelding te centreren-->
+          <div class="row justify-content-center">
+            <figure class="figure col-12 col-md-10 text-center">
+              <img
+                src="assets/images/Bekabelingsplan.jpg"
+                alt="Bekabelingsschema van het kantoor"
+                class="figure-img img-fluid rounded"
+              />
+              <figcaption class="figure-caption text-muted mt-3">
+                <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+                Overzicht van het bekabelingsschema met serverkast, werkplekken
+                en access points.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3 class="h4 mt-4 mb-3">Visualisatie rack layout</h3>
+          <!-- tekst en afbeelding in row en cols gedaan om ze naast elkaar te laten zien -->
+          <div class="row mt-4 mb-3">
+            <!-- afbeelding md-6 om halve col in te nemen bij groot scherm -->
+            <div class="col-md-6 text-center">
+              <figure class="figure">
+                <img
+                  src="assets/images/Rack-layout.jpg"
+                  alt="Rack layout van de serverkast"
+                  class="figure-img img-fluid rounded"
+                />
+                <figcaption class="figure-caption text-muted mt-3">
+                  <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+                  Overzicht van de rack layout met servers, switches en
+                  patchpanelen.
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- tekst md-6 om halve col in te nemen bij groot scherm -->
+            <div class="col-md-6">
+              <p>
+                Naast het bekabelingsschema werd ook een uitgebreide rack layout
+                opgesteld om de fysieke opstelling van de netwerkapparatuur
+                overzichtelijk weer te geven. Deze visualisatie vormt een
+                belangrijk hulpmiddel bij het plannen en beheren van de
+                infrastructuur.
+              </p>
+              <p>
+                In de layout zie je hoe de serverkast is ingericht, met een
+                duidelijke scheiding tussen switches, patchpanelen en servers.
+                Door de logische plaatsing van de componenten blijft het rack
+                niet alleen overzichtelijk, maar wordt ook het beheer en
+                onderhoud eenvoudiger.
+              </p>
+              <p>
+                De indeling benadrukt bovendien het belang van een nette
+                kabelorganisatie en een efficiënte benutting van de beschikbare
+                ruimte. Een goed gestructureerde rack layout draagt bij aan
+                stabiliteit, voorkomt fouten tijdens uitbreidingen en maakt het
+                eenvoudiger om storingen snel te verhelpen.
+              </p>
+              <p>
+                Zo vormt de rack layout samen met het bekabelingsschema een
+                solide basis voor een professioneel en duurzaam netwerkbeheer.
+              </p>
+              <p>
+                Daarnaast biedt de visualisatie een waardevol communicatiemiddel
+                voor collega's en externe partijen. Het maakt complexe
+                infrastructuur begrijpelijker en zorgt ervoor dat iedereen snel
+                inzicht krijgt in de structuur van het netwerk. Dit bevordert
+                samenwerking en voorkomt misverstanden bij onderhoud of
+                uitbreidingen.
+              </p>
+              <p>
+                Tot slot legt de rack layout de basis voor toekomstige
+                schaalbaarheid. Wanneer nieuwe servers of netwerkcomponenten
+                moeten worden toegevoegd, kan dit eenvoudig worden gepland
+                zonder dat de bestaande structuur in het gedrang komt. Zo blijft
+                het netwerk flexibel en klaar voor groei.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="h4 mt-4 mb-3">Visualisatie patchplan</h3>
+          <p>
+            Om de verbindingen tussen patchpaneel en netwerkapparatuur
+            overzichtelijk te documenteren, werd een patchplan opgesteld. Dit
+            schema toont hoe de poorten van het patchpaneel gekoppeld zijn aan
+            de switches en servers, en hoe de bekabeling naar de verschillende
+            werkplekken en bureaus verloopt. Dankzij deze indeling blijft het
+            beheer eenvoudig en kan bij uitbreiding of onderhoud snel worden
+            nagegaan welke poort met welk apparaat verbonden is.
+          </p>
+          <!-- pt-2 en pb-2 voor padding top en bottom -->
+          <figure class="text-center pt-2 pb-2">
+            <img
+              src="assets/images/Patch-plan.jpg"
+              alt="Patchplan van het netwerk"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption text-muted mt-3">
+              <!-- text-muted voor lichtere kleur en mt-3 voor spatie erboven-->
+              Overzicht van het patchplan met koppeling tussen patchpaneel en
+              netwerkapparatuur.
+            </figcaption>
+          </figure>
+
+          <h3 class="h4 mt-4 mb-3">Projectafronding en kostenanalyse</h3>
+
+          <p>
+            Bij de uitwerking van dit netwerkontwerp moesten enkele mogelijke
+            obstakels in rekening worden gebracht. Zo kon de fysieke plaatsing
+            van de serverkast en de routing van de UTP-bekabeling doorheen het
+            gebouw leiden tot beperkingen in kabeltrajecten en vereiste dit
+            extra aandacht voor kabelmanagement.
+          </p>
+
+          <p>
+            Ook de strategische positionering van de wifi access points vroeg om
+            een site survey, zodat storingen door betonnen muren of metalen
+            constructies konden worden vermeden. Verder bleek het patchen van de
+            wandcontactdozen en het correct labelen van de patchpanelen
+            tijdsintensief, zeker omdat er sprake was van meerdere bureaus en
+            verdiepingen.
+          </p>
+
+          <p>
+            Vanuit technisch oogpunt was het belangrijk dat de switches
+            voldoende throughput en PoE-capaciteit boden voor VoIP-telefoons en
+            access points. Daarnaast werd redundantie voorzien om single points
+            of failure te vermijden.
+          </p>
+
+          <p>
+            Termen als bandbreedte-allocatie, latency en cross-talk waren
+            hierbij niet louter vakjargon, maar reële aandachtspunten die de
+            stabiliteit van het netwerk beïnvloedden.
+          </p>
+
+          <p>
+            Tot slot werd ook het totale kostenplaatje in kaart gebracht. Voor
+            dit project bedroeg de investering
+            <strong>&euro; 10.863</strong>, inclusief de aanschaf van
+            serverkast, switches, access points, VoIP-toestellen, patchpanelen,
+            racks en bekabelingsmateriaal.
+          </p>
+
+          <p>
+            Hoewel dit bedrag aanzienlijk leek, werd het gerechtvaardigd door
+            het belang van kwalitatief materiaal en een robuuste infrastructuur.
+            Hoogwaardige bekabeling en betrouwbare apparatuur zorgden niet
+            alleen voor een stabiele werking en minder storingen, maar
+            verlengden ook de levensduur van het netwerk en beperkten
+            toekomstige onderhoudskosten.
+          </p>
+
+          <p>
+            Zo vormde deze investering een solide basis voor de continuïteit en
+            efficiëntie van de organisatie.
+          </p>
+
+          <p>
+            Samengevat vormde de investering van
+            <strong>&euro; 10.863</strong> in kwalitatief materiaal en
+            bekabeling een noodzakelijke stap om een stabiel, toekomstbestendig
+            en professioneel netwerk te garanderen.
+          </p>
+
+          <h3 class="h4 mt-4 mb-3">Reflectie</h3>
+          <p>
+            Dit project liet zien dat het ontwerpen van een netwerk niet alleen
+            een technische oefening is, maar ook een proces waarin planning,
+            documentatie en samenwerking centraal staan. Door het
+            bekabelingsschema, de rack layout en het patchplan zorgvuldig uit te
+            werken, werd duidelijk hoe belangrijk structuur en overzicht zijn
+            voor een stabiele infrastructuur. De combinatie van technische
+            vereisten en praktische beperkingen maakte het project realistisch
+            en leerzaam, en benadrukte dat een professioneel netwerkontwerp niet
+            enkel draait om hardware, maar ook om duidelijke afspraken en
+            efficiënt beheer.
+          </p>
+          <p>
+            Het resultaat was een ontwerp dat voldoet aan de huidige noden van
+            de organisatie en tegelijk ruimte laat voor groei en uitbreiding.
+            Deze aanpak bewijst dat investeren in kwaliteit en documentatie de
+            sleutel is tot duurzame IT-oplossingen. Zo vormt het project een
+            solide basis voor continuïteit en toekomstbestendig netwerkbeheer.
+          </p>
+          <hr />
+          <p>
+            Bedankt voor uw interesse in dit project en voor de waardering van
+            de technische uitwerking en documentatie. Dit toont aan dat
+            investeren in kwalitatief materiaal en een professioneel netwerk
+            essentieel blijft voor duurzame werking en vertrouwen.
+          </p>
+        </main>
+
+        <!-- aside gescheiden door lijn met border-start en ps-5 voor spatie ertussen mb-3 voor margin bottom en pt-5 voor padding top-->
+        <aside class="col-md-3 border-start ps-5 mb-3 pt-5">
+          <h2 class="text-uppercase fs-5 fw-bold pt-3">contact</h2>
+          <p>
+            Usman Khan<br />
+            <a href="mailto:usman.khan@mail.be">usman.khan@mail.be</a><br />
+            +32 456 78 91 23
+          </p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin blauw fs-5"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://github.com/sui785" target="_blank">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:usman.khan@mail.be">
+                <i class="bi bi-envelope-at-fill blauw fs-5"></i>
+              </a>
+            </li>
+          </ul>
+          <h2 class="text-uppercase fs-5 fw-bold pt-5 pb-3">
+            <strong>Projecten</strong><br />
+          </h2>
+          <a href="#">Webwizz</a><br /><br />
+          <a href="datacenter.html">Datacenter</a><br /><br />
+          <a href="cybersecurity.html">Cybersecurity</a><br /><br />
+          <a href="shellscripting.html">Shell Scripting</a><br /><br />
+          <a href="webdevelopment.html">Webdevelopment</a><br /><br />
+          <a href="cablemanagement.html">Cable Management</a><br />
+        </aside>
+      </div>
+    </div>
+
+    <!-- p-4 voor zij-padding small voor kleinere letters fluid voor volledige breedte  -->
+    <footer class="bg-light small p-4 container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- Links on the left -->
+          <div class="col-4 text-start">
+            <strong>Links</strong><br />
+            <a href="index.html">Home</a><br />
+            <a href="portfolio.html">Portfolio</a><br />
+            <a href="project.html">Projecten</a><br />
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <!-- Socials centered -->
+          <div class="col-4 text-center">
+            <strong>Socials</strong><br /><br />
+            <a
+              href="https://www.linkedin.com/in/usman-khan-3ba831137/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            - <a href="https://github.com/sui785" target="_blank">Github</a> -
+            <a href="mailto:usman.khan@mail.be">E-mail</a><br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <small
+              >Usman Khan - <time id="year"></time> - &copy; Alle rechten
+              voorbehouden</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
