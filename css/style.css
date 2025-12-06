@@ -26,10 +26,10 @@ a:hover {
 }
 /* portfolio items gepersonaliseerd */
 .portfolio-item {
-  border: 1px solid #ddd; /* kader rond het vakje */
+  border: 1px solid #ddd; /* dikte van kader rond het vakje */
   padding: 1rem; /* spaties rondom in vak */
   border-radius: 15px; /* afronding van bordervak */
-  transition: box-shadow 0.3s ease; /* effect bij hovering */
+  transition: box-shadow 0.3s ease; /* instelling voor effect bij hovering */
   background-color: #f8f9fa; /* achtergrond van het vak zelfde als navbar */
   object-fit: cover; /*  netjes in het vakje */
 }
@@ -46,7 +46,7 @@ a:hover {
 
 /* lijst personaliseren met bolletjes en spaties */
 ul.project-list {
-  list-style-type: disc; /* gekozen voor ronde bolletjes */
+  list-style-type: disc; /* ronde bolletjes */
   padding-left: 1.5rem; /* linkse spatie van de oplijsting */
 }
 

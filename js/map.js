@@ -1,4 +1,4 @@
-let map = L.map("dataMap").setView([51.26453538688258, 4.41468579131598], 16);
+let map = L.map("dataMap").setView([51.2635, 4.4146], 16);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
@@ -6,18 +6,21 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-// bepaal de rechthoek rondom het gebouw van AP (coördinaten zijn 51.23041, 4.4155 en 51.22991, 4.41675)
+// rechthoek rond de datacenter
 
 let bounds = [
-  [51.26453, 4.4146],
-  [51.26455, 4.4148],
+  [51.263238, 4.414454],
+  [51.263034, 4.414918],
 ];
 
-// kleur de rechthoek in met de rode AP-kleur (#e60005)
+// kleur van de rechthoek (#e60005)
 
 L.rectangle(bounds, { color: "#e60005", weight: 1 }).addTo(map);
 
-// plaats een marker (coördinaten 51.23009 en 4.41616) met als tekst "AP-Hogeschool" en eronder "Ellermanstraat 33"
-let dataMarker = L.marker([51.26453, 4.4146]).addTo(map);
+// plaats van de marker
+let dataMarker = L.marker([51.263108, 4.41467]).addTo(map);
 
-dataMarker.bindPopup("<b>Datacenter United</b><br>Antwerpen").openPopup();
+// tekst bij de marker
+dataMarker
+  .bindPopup("<b>Datacenter United</b><br>Haifastraat 6<br>2030 Antwerpen")
+  .openPopup();
